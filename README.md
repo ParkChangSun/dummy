@@ -1,2 +1,4 @@
 # dummy
-dummyforgitpractice
+dummyforgitpractice conflict
+conflict
+conflict
