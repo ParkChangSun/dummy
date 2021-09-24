@@ -2,8 +2,10 @@ import random
 
 # greeting
 
-a = random.randint(0,1)
+a = random.randint(0,2)
 if a == 1:
     print("hello")
-else:
+elif:
     print("hi")
+else:
+    print("good morning")
