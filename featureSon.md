@@ -1,5 +1,6 @@
 # name : featureSon
 ## do : greeting
-* "hello"
-* "hi"
+* "hello!"
+* "hi~"
+* "good morning"
 
