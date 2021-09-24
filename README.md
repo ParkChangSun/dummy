@@ -1,6 +1,8 @@
 # dummy
 
-hello hello world
+dummyforgitpractice conflict
+conflict
+conflict
 
 ## Commit Guideline
 
