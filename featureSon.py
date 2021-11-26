@@ -1,6 +1,5 @@
 import random
 
-print("code was changed")
 
 # greeting
 
@@ -12,3 +11,5 @@ else:
 # say goodmorning
 print("good morning")
 
+
+print("code was changed")
