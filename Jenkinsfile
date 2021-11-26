@@ -36,16 +36,4 @@ pipeline{
             }
         }
     }
-    post {
-        //3 conditions
-        always {
-            //    
-        }
-        success {
-            //   
-        }
-        failure {
-            //   
-        }
-    }
 }
