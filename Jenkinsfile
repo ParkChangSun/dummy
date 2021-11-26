@@ -8,11 +8,6 @@ pipeline{
     stages {
     
         stage("build") {
-            when {
-                expression {
-                    CODE_CHANGES == true   
-                }
-            }
       
             steps {
                 echo 'building the application...'
@@ -21,11 +16,6 @@ pipeline{
         }
         
         stage("test") {
-            when {
-                expression {
-                    CODE_CHANGES == true  
-                }
-            }
             
             steps {
                 echo 'testing the application...'
