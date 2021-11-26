@@ -1,3 +1,4 @@
+CODE_CHANGES = getGitChanges()
 pipeline{
     
     agent any
@@ -5,6 +6,11 @@ pipeline{
     stages {
     
         stage("build") {
+            when {
+                expression {
+                    BRANCH_NAME == 'feature/Son' && CODE_CHANGES == true   
+                }
+            }
       
             steps {
                 echo 'building the application...'
@@ -12,6 +18,11 @@ pipeline{
         }
         
         stage("test") {
+            when {
+                expression {
+                    BRANCH_NAME == 'feature/Son' || BRANCH_NAME == 'master' 
+                }
+            }
             
             steps {
                 echo 'testing the application...'
@@ -23,6 +34,18 @@ pipeline{
             steps {
                 echo 'deploying the application...'
             }
+        }
+    }
+    post {
+        //3 conditions
+        always {
+            //    
+        }
+        success {
+            //   
+        }
+        failure {
+            //   
         }
     }
 }
