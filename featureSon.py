@@ -1,5 +1,7 @@
 import random
 
+print("code was changed")
+
 # greeting
 
 a = random.randint(0,1)
